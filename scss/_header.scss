@@ -1,0 +1,79 @@
+.header {
+    background-color: #deb55e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/*ESTILOS DEL LOGO*/
+
+.header{ 
+    
+    .logo{
+    cursor: pointer;
+    
+    img {
+        height: 70px;
+        width: auto;
+        transition: all 0.3s;
+    
+        &:hover {
+            transform: scale(1.2);
+            }
+        }
+    }
+}
+
+/*ESTLOS DE LA BARRA DE NAVEGACION*/
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 700;
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #824b21;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        
+        &:hover {
+            transform: scale(1.1);
+            color: #824b21;
+        }
+    
+    }
+
+}
+
+
+/*ESTILOS DEL BOTON "SOBRE NOSOTROS"*/
+
+.header .btn button {
+    font-weight: 700;
+    color: #824b21;
+    padding: 9px 25px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: whitesmoke;
+        color: #824b21;
+        transform: scale(1.1);
+    }
+
+}
+
+

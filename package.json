@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-final-coder",
+  "version": "1.0.0",
+  "description": "Esta pagina web es para la radio de mi colegio, para que puedan trasmitir en vivo y publicar su contenido por ese medio asi mas gente externa al colegio lo puede ver y seguir ",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "proyecto-coder"
+  ],
+  "author": "Mateo Curcio",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

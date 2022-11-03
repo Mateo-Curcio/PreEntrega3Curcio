@@ -1,0 +1,106 @@
+/*ESTILOS DEL MAIN*/
+
+/*ESTILOS DE TITULO Y SUBTITULOS*/
+
+.main .titulo-de-la-pagina {
+    background-color:#b49c7c;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    width: auto;
+    color: #824b21;
+}
+    
+.main .subtitulos-de-la-pagina {
+    background-color:#b49c7c;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    width: auto;
+    color: #824b21;
+}
+    
+.main .texto {
+    font-weight: 700;
+    color: #824b21;
+    padding: 9px  25px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+}
+    
+    /*ESTILOS "PROGRAMA EN VIVO"*/
+    
+    .main .transmision-en-directo {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .link-de-twitch {
+        margin: 5px;
+        padding: 9px  25px;
+        background-color: #d89a2e;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        
+        &:hover {
+            transform: scale(1.1);
+            }
+    }
+}
+
+    
+    /*ESTILOS "NOTI EXPRESS"*/
+    .main .noticias {
+    padding: 70px 100px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+    }
+    
+    /*ESTILOS "ULTIMOS PROGRAMAS"*/
+    
+    .container-videos {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "video-1 video-2"
+    "video-3 video-4"; 
+    }
+    
+    .video-1 { grid-area: video-1; padding: 1.5px 1.5px; }
+    .video-2 { grid-area: video-2; padding: 1.5px 1.5px; }
+    .video-3 { grid-area: video-3; padding: 1.5px 1.5px; }
+    .video-4 { grid-area: video-4; padding: 1.5px 1.5px; }
+    
+    .main .lista-de-videos {
+    background-color: #deb55e;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    
+    .container-videos {
+        margin: 5px;
+        padding: 9px  25px;
+        background-color: #d89a2e;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        
+        &:hover {
+            transform: scale(1.1);
+            }
+    }
+}
