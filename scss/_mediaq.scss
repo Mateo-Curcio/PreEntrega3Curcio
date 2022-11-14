@@ -50,3 +50,26 @@ justify-content: center;
 }
 
     }
+@media(max-width:1175px){
+    .container-videos{
+        width: fit-content;
+        height: fit-content;
+        
+        .videos{
+            width: 400px;
+            height: 200px;
+        }
+    }
+}
+
+@media(max-width:855px){
+    .container-videos{
+        width: fit-content;
+        height: fit-content;
+        
+        .videos{
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+}

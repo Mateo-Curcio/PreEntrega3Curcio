@@ -30,22 +30,21 @@ body {
 /*ESTLOS DE LA BARRA DE NAVEGACION*/
 .header .nav-links {
   list-style: none; }
-
-.header .nav-links li {
-  display: inline-block;
-  padding: 0 20px;
-  font-size: 700;
-  color: whitesmoke;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #824b21;
-  cursor: pointer;
-  transition: all 0.3s ease 0s; }
-  .header .nav-links li a {
+  .header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 700;
+    color: whitesmoke;
     text-decoration: none;
-    color: whitesmoke; }
-    .header .nav-links li a:hover {
-      transform: scale(1.1);
-      color: #824b21; }
+    text-shadow: 1px 1px 0 #824b21;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; }
+    .header .nav-links li a {
+      text-decoration: none;
+      color: whitesmoke; }
+      .header .nav-links li a:hover {
+        transform: scale(1.1);
+        color: #824b21; }
 
 /*ESTILOS DEL BOTON "SOBRE NOSOTROS"*/
 .header .btn button {
@@ -64,17 +63,7 @@ body {
 
 /*ESTILOS DEL MAIN*/
 /*ESTILOS DE TITULO Y SUBTITULOS*/
-.main .titulo-de-la-pagina {
-  background-color: #b49c7c;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-transform: uppercase;
-  padding: 15px 0px;
-  width: auto;
-  color: #824b21; }
-
-.main .subtitulos-de-la-pagina {
+.main .titulo-de-la-pagina, .main .subtitulos-de-la-pagina {
   background-color: #b49c7c;
   display: flex;
   justify-content: center;
@@ -158,6 +147,111 @@ body {
     .main .lista-de-videos .container-videos:hover {
       transform: scale(1.1); }
 
+/*ESTILOS PROGRAMACION*/
+.main .container {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 0 20px #333;
+  border-radius: 5px;
+  border-color: #333;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 50px;
+  grid-auto-columns: 1fr;
+  gap: 0% 0%;
+  grid-auto-flow: row;
+  grid-template-areas: "Horarios\/Dias Lunes- Martes- Miercoles Jueves Viernes" "entreturno Reuniones- Reuniones- Reuniones- Reuniones- Reuniones-" "Segundo-Recreo Info-tec Libre Pinguino-galactico . Info-tec-2"; }
+
+.main .entreturno {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Lunes- {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Martes- {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Miercoles {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Jueves {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Viernes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Segundo-Recreo {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Reuniones- {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Info-tec {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Info-tec-2 {
+  grid-column-start: 6;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Pinguino-galactico {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Libre {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main .Libre2 {
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 @media (max-width: 720px) {
   .header {
     padding: 10px 10px; }
@@ -191,3 +285,19 @@ body {
     .container-videos .videos {
       width: 400px;
       height: 200px; } }
+
+@media (max-width: 1175px) {
+  .container-videos {
+    width: fit-content;
+    height: fit-content; }
+    .container-videos .videos {
+      width: 400px;
+      height: 200px; } }
+
+@media (max-width: 855px) {
+  .container-videos {
+    width: fit-content;
+    height: fit-content; }
+    .container-videos .videos {
+      width: fit-content;
+      height: fit-content; } }
