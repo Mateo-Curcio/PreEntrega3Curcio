@@ -3,87 +3,90 @@
 /*ESTILOS DE TITULO Y SUBTITULOS*/
 
 .main {
-    .titulo-de-la-pagina {
-    background-color:#b49c7c;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-transform: uppercase;
-    padding: 15px 0px;
-    width: auto;
-    color: #824b21;}
-    .subtitulos-de-la-pagina {
+.titulo-de-la-pagina {
+background-color:#b49c7c;
+display: flex;
+justify-content: center;
+align-content: center;
+text-transform: uppercase;
+padding: 15px 0px;
+width: auto;
+color: #824b21;}
+.subtitulos-de-la-pagina {
         @extend .titulo-de-la-pagina;
-    }
-    .texto {
+}
+.texto {
         font-weight: 700;
         color: #824b21;
         padding: 9px  25px;
         background-color: whitesmoke;
         border: none;
         border-radius: 50px;
-    }
 }
-    
-    
-    /*ESTILOS "PROGRAMA EN VIVO"*/
-    
-    .main .transmision-en-directo {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    .link-de-twitch {
-        margin: 5px;
-        padding: 9px  25px;
-        background-color: #d89a2e;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        
-        &:hover {
-            transform: scale(1.1);
-            }
-    }
 }
 
-    
-    /*ESTILOS "NOTI EXPRESS"*/
-    .main .noticias {
-    padding: 70px 100px;
-    background-color: whitesmoke;
-    border: none;
-    border-radius: 50px;
-    }
-    
-    /*ESTILOS "ULTIMOS PROGRAMAS"*/
-    
-    .container-videos {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "video-1 video-2"
-    "video-3 video-4"; 
-    }
-    
-    .video-1 { grid-area: video-1; padding: 1.5px 1.5px; }
-    .video-2 { grid-area: video-2; padding: 1.5px 1.5px; }
-    .video-3 { grid-area: video-3; padding: 1.5px 1.5px; }
-    .video-4 { grid-area: video-4; padding: 1.5px 1.5px; }
-    
-    .main .lista-de-videos {
-    background-color: #deb55e;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-    
-    .container-videos {
+
+/*ESTILOS "PROGRAMA EN VIVO"*/
+
+.main .transmision-en-directo {
+padding: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+.link-de-twitch {
+        margin: 5px;
+        padding: 9px  25px;
+        background-color: #d89a2e;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+        transform: scale(1.1);
+        }
+}
+}
+
+
+/*ESTILOS "NOTI EXPRESS"*/
+.main .noticias {
+padding: 70px 100px;
+background-color: whitesmoke;
+border: none;
+border-radius: 50px;
+}
+
+/*ESTILOS "ULTIMOS PROGRAMAS"*/
+
+.container-videos {
+display: grid; 
+grid-auto-columns: 1fr; 
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: 1fr 1fr; 
+gap: 0px 0px; 
+grid-template-areas: 
+"video-1 video-2"
+"video-3 video-4"; 
+}
+
+.video-1 { grid-area: video-1; padding: 1.5px 1.5px; }
+.video-2 { grid-area: video-2; padding: 1.5px 1.5px; }
+.video-3 { grid-area: video-3; padding: 1.5px 1.5px; }
+.video-4 { grid-area: video-4; padding: 1.5px 1.5px; }
+
+.main .lista-de-videos {
+background-color: #deb55e;
+padding: 20px;
+display: grid;
+grid-template-columns: auto auto;
+justify-content: space-around;
+
+
+
+
+.container-videos {
         margin: 5px;
         padding: 9px  25px;
         background-color: #d89a2e;
@@ -93,111 +96,158 @@
         transition: all 0.3s ease 0s;
         
         &:hover {
-            transform: scale(1.1);
-            }
-    }
+        transform: scale(1.1);
+        }
+}
 }
 
 /*ESTILOS PROGRAMACION*/
 
 .main{
-    .container {  
-    width: 90%;
-    background-color: white;
-    box-shadow: 0 0 20px #333;
-    border-radius: 5px;
-    border-color: #333;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 50px;
-    grid-auto-columns: 1fr;
-    gap: 0% 0%;
-    grid-auto-flow: row;
-    grid-template-areas:
+.container {  
+width: 90%;
+background-color: white;
+padding: 0;
+box-shadow: 0 0 20px #333;
+border-radius: 5px;
+margin: 50px auto;
+display: grid;
+grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1fr;
+grid-auto-rows: 90px;
+grid-auto-columns: 1fr;
+gap: 0% 0%;
+grid-auto-flow: row;
+grid-template-areas:
         "Horarios\/Dias Lunes- Martes- Miercoles Jueves Viernes"
         "entreturno Reuniones- Reuniones- Reuniones- Reuniones- Reuniones-"
         "Segundo-Recreo Info-tec Libre Pinguino-galactico . Info-tec-2";
-    }
+}
 
-    .entreturno{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Lunes-{grid-column-start: 2;
-            grid-column-end: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Martes-{grid-column-start: 3;
-            grid-column-end: 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Miercoles{display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Jueves{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Viernes{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Segundo-Recreo{
-            grid-column-start: 1;
-            grid-column-end: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Reuniones-{grid-column-start: 2;
-            grid-column-end: 7;
-            grid-row-start: 2;
-            grid-row-end: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Info-tec{display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Info-tec-2{grid-column-start: 6;
-            grid-column-end: 6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Pinguino-galactico{grid-column-start: 4;
-            grid-column-end: 4;
-            grid-row-start: 3;
-            grid-row-end: 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Libre{grid-column-start: 3;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .Libre2{grid-column-start: 5;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
+.HorariosDias{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.entreturno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Lunes-{grid-column-start: 2;
+        grid-column-end: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Martes-{grid-column-start: 3;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Miercoles{display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Jueves{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Viernes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Segundo-Recreo{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Reuniones-{grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Info-tec{display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Info-tec-2{grid-column-start: 6;
+        grid-column-end: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Pinguino-galactico{grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Libre{grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
+.Libre2{grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #333;
+}
 }

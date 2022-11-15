@@ -151,58 +151,87 @@ body {
 .main .container {
   width: 90%;
   background-color: white;
+  padding: 0;
   box-shadow: 0 0 20px #333;
   border-radius: 5px;
-  border-color: #333;
   margin: 50px auto;
   display: grid;
   grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 50px;
+  grid-auto-rows: 90px;
   grid-auto-columns: 1fr;
   gap: 0% 0%;
   grid-auto-flow: row;
   grid-template-areas: "Horarios\/Dias Lunes- Martes- Miercoles Jueves Viernes" "entreturno Reuniones- Reuniones- Reuniones- Reuniones- Reuniones-" "Segundo-Recreo Info-tec Libre Pinguino-galactico . Info-tec-2"; }
 
+.main .HorariosDias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
+
 .main .entreturno {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Lunes- {
   grid-column-start: 2;
   grid-column-end: 2;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Martes- {
   grid-column-start: 3;
   grid-column-end: 3;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Miercoles {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Jueves {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Viernes {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Segundo-Recreo {
   grid-column-start: 1;
   grid-column-end: 1;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Reuniones- {
   grid-column-start: 2;
@@ -211,19 +240,28 @@ body {
   grid-row-end: 2;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Info-tec {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Info-tec-2 {
   grid-column-start: 6;
   grid-column-end: 6;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Pinguino-galactico {
   grid-column-start: 4;
@@ -232,7 +270,10 @@ body {
   grid-row-end: 3;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Libre {
   grid-column-start: 3;
@@ -241,7 +282,10 @@ body {
   grid-row-end: 3;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 .main .Libre2 {
   grid-column-start: 5;
@@ -250,7 +294,10 @@ body {
   grid-row-end: 3;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333; }
 
 @media (max-width: 720px) {
   .header {
